@@ -1,0 +1,9 @@
+{
+    "version": "R57",
+    "url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth64-Portable-R57.7z",
+    "pre_install": [
+        "$Gist = 'https://gist.githubusercontent.com/Aetopia/88b42049bc1209e402dba08291088e01/raw/b645020caa8fbb8a9ee4a18462636f282adc0e9b/pre_install.ps1'",
+        "iwr -Uri $Gist | iex"
+
+    ]   
+}
