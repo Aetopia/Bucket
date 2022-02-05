@@ -2,9 +2,15 @@
     "version": "R57",
     "architecture": {
 
-        "64bit": {"url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth64-R57.exe"},
+        "64bit": {
+            "url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth64-R57.exe",
+            "hash":"B13E9A20E698ACEA881EFBC2CDD2B6473A1448B293FBB2899908BFD77901D0D7"
+        },
 
-        "32bit": {"url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth32-R57.exe"}
+        "32bit": {
+            "url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth32-R57.exe",
+            "hash": "C004B652E3A6C4138B3FC782CF5539EDE898C182AA2846366F17282BF251742A"
+        }
     },  
 
     "innosetup": true,  
