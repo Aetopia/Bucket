@@ -2,8 +2,7 @@
     "version": "R57",
     "url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth64-Portable-R57.7z",
     "pre_install": [
-        "$Gist = 'https://github.com/Aetopia/Bucket/blob/main/dependencies/vapoursynth.ps1'",
-        "iwr -Uri $Gist | iex"
+        "iwr -Uri https://github.com/Aetopia/Bucket/blob/main/dependencies/vapoursynth.ps1 | iex"
 
     ]   
 }
