@@ -7,7 +7,9 @@
         "32bit": {"url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth32-R57.exe"}
     },  
 
-    "innosetup": true,   
+    "innosetup": true,  
+    
+    "depends": ["ffmpeg"],
 
     "pre_install": ["iwr -Uri 'https://raw.githubusercontent.com/Aetopia/Bucket/main/dependencies/vapoursynth/vapoursynth.ps1' | iex"]
 }
