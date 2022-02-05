@@ -1,5 +1,13 @@
 {
     "version": "R57",
-    "url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth64-Portable-R57.7z",
-    "pre_install": ["iwr -Uri 'https://raw.githubusercontent.com/Aetopia/Bucket/main/dependencies/vapoursynth.ps1' | iex"]   
+    "architecture": {
+
+        "64bit": {"url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth64-R57.exe"},
+
+        "32bit": {"url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth32-R57.exe"}
+    },  
+
+    "innosetup": true,   
+
+    "pre_install": ["iwr -Uri 'https://raw.githubusercontent.com/Aetopia/Bucket/main/dependencies/vapoursynth/vapoursynth.ps1' | iex"]
 }
