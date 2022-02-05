@@ -17,5 +17,12 @@
     
     "depends": ["ffmpeg"],
 
-    "pre_install": ["iwr -Uri 'https://raw.githubusercontent.com/Aetopia/Bucket/main/dependencies/vapoursynth/vapoursynth.ps1' | iex"]
+    "pre_install": [
+        "scoop install \"https://raw.githubusercontent.com/ScoopInstaller/Versions/master/bucket/python39.json\"",
+        "reg.exe import \"$env:USERPROFILE/scoop/apps/python39/current/install-pep-514.reg\""
+    ],
+
+    "post_install": ["Rename-Item -Path \"$env:USERPROFILE/scoop/apps/vapoursynth/current/core/vsscript,2.dll\" -NewName \"$env:USERPROFILE/scoop/apps/vapoursynth/current/core/vsscript.dll\""],
+
+    "bin": ["core/vspipe.exe", "vsrepo/vsrepo.py"]
 }
