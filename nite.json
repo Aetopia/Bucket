@@ -1,6 +1,8 @@
 {
     "version": "1.0.0",
-    "url": "https://raw.githubusercontent.com/Aetopia/Nite/main/nite.py",
+    "url": ["https://raw.githubusercontent.com/Aetopia/Nite/main/nite.py",
+            "https://raw.githubusercontent.com/Aetopia/Nite/main/Options.ini"],
+    "persist": ["Options.ini"],        
     "bin": ["nite.py"],
     "description": "Nite is a simple command line based launcher for Lunar Client.",
     "suggest": {"Python - Latest":"python"}
