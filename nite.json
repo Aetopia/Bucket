@@ -1,11 +1,7 @@
 {
     "version": "1.0.0",
-    "architecture": {
-
-        "64bit": {
-            "url": "https://github.com/vapoursynth/vapoursynth/releases/download/R57/VapourSynth64-R57.exe",
-            "hash":"0A97363D051E665F15B65F5FB0314EFD823394992EBF7DE52863610EE73815CD"
-        }
-    },
-    "bin": ["nite.cmd"]
+    "url": "https://raw.githubusercontent.com/Aetopia/Nite/main/nite.py",
+    "bin": ["nite.py"],
+    "description": "Nite is a simple command line based launcher for Lunar Client.",
+    "suggest": {"Python - Latest":"python"}
 }    
