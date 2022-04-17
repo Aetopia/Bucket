@@ -1,1 +1,0 @@
-Remove-Item "$env:USERPROFILE\scoop\apps\lunarclient\current\resources\app-update.yml"
