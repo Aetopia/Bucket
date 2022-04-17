@@ -16,7 +16,7 @@ for line in request:
             files += line.split('file:')[1].strip(),    
 
 for file in files[1:]:
-    run(f'curl -L https://launcherupdates.lunarclientcdn.com/{file} -o "{getenv("TEMP")}/{file}"')
+    run(f'curl -L -# https://launcherupdates.lunarclientcdn.com/{file} -o "{getenv("TEMP")}/{file}"')
     files += run(f'''powershell -c "(Get-FileHash {getenv("TEMP")}/{file}).Hash''', capture_output = True).stdout.decode('UTF-8').strip(),
 manifest = {
     "version": f"{files[0]}",
