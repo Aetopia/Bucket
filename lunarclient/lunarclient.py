@@ -36,8 +36,4 @@ manifest = {
 }   
 
 with open('lunarclient.json', 'w') as file:
-    file.write(dumps(manifest, indent = 4))
-
-       
-
-        
+    file.write(dumps(manifest, indent = 4))  
