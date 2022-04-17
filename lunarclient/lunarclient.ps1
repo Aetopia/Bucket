@@ -10,4 +10,4 @@ if (-not(Test-Path -Path "$env:USERPROFILE\.lunarclient")) {
         Remove-Item -Path "$env:USERPROFILE\.lunarclient" -Recurse
     }        
 }
-mklink.exe "$env:USERPROFILE\.lunarclient" "$LunarClient\data" /D
+cmd /c mklink "$env:USERPROFILE\.lunarclient" "$LunarClient\data" /D
