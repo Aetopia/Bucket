@@ -32,7 +32,7 @@ manifest = {
             "hash": f"{files[4]}"
         }
     },   
-    "post_install": ["irm https://raw.githubusercontent.com/Aetopia/Bucket/main/lunarclient.ps1 | iex"]     
+    "post_install": ["irm https://raw.githubusercontent.com/Aetopia/Bucket/main/lunarclient/lunarclient.ps1 | iex"]     
 }   
 
 with open('lunarclient.json', 'w') as file:
