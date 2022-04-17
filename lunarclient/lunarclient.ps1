@@ -8,6 +8,6 @@ if (-not(Test-Path -Path "$env:USERPROFILE\.lunarclient")) {
     if ((Get-Item "$env:USERPROFILE\.lunarclient").LinkType -ne "SymbolicLink") {
         Copy-Item -Path "$env:USERPROFILE\.lunarclient" "$LunarClient\data" -Recurse
         Remove-Item -Path "$env:USERPROFILE\.lunarclient" -Recurse
-        mklink.exe "$env:USERPROFILE\.lunarclient" "$LunarClient\data" /D
-    }    
+    }        
 }
+mklink.exe "$env:USERPROFILE\.lunarclient" "$LunarClient\data" /D
